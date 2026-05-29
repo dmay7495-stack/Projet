@@ -1,0 +1,47 @@
+body{
+    background: url("fond.png");
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    transition: 0.6s;}
+@keyframes zoom {
+    0%{transform: scale(1);}
+    100%{transform: scale(1.03);}
+    
+}
+.contenu{
+    margin-top: 25px;
+    justify-content: center;
+    animation: zoom 2s infinite alternate;
+
+    
+}
+h1{
+    
+    font-size: 90px;
+    
+}
+@keyframes tex {
+    0%{background: black; color: white;}
+    100%{background: rgb(209, 148, 82); color: white;}
+    
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 10px 50px;
+    border-radius: 25px;
+    transition: 0.5s;
+    animation: tex 1s infinite alternate;
+    
+}
+button:hover{
+    background: rgb(209, 148, 82) !important;
+    cursor: pointer;
+    transform: translateY(-5px);
+}

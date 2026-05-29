@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Compétences</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="skills.css">
+</head>
+<body>
+
+    <div class="contenu">
+        <header class="skills-header">
+            <h1>COMPÉTENCES</h1>
+        </header>
+
+        <div class="skills-grid">
+            
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                <h3>Développement Web</h3>
+                <p>Maîtrise de HTML5, CSS et JavaScript pour concevoir des interfaces modernes et dynamiques.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                <h3>Développement Python</h3>
+                <p>Écriture de scripts propres, automatisation de tâches et logique algorithmique.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                <h3>Débogage & Optimisation</h3>
+                <p>Analyse de code, détection de comportements anormaux et correction efficace de bugs.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-server"></i></div>
+                <h3>Monitoring Systèmes</h3>
+                <p>Surveillance des performances d'infrastructures et gestion de la stabilité des réseaux.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Cybersécurité</h3>
+                <p>Compréhension des vulnérabilités, bases en hacking éthique et sécurisation applicative.</p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <h3>Bases de Données</h3>
+                <p>Modélisation, requêtage et gestion structurée des données de l'application.</p>
+            </div>
+
+        </div>
+
+        <footer class="skills-footer">
+            <button id="btn-retour">
+                <i class="fas fa-arrow-left"></i> Retour
+            </button>
+        </footer>
+    </div>
+
+    <script>
+        const btnRetour = document.getElementById('btn-retour');
+        btnRetour.onclick = function () {
+            window.location.href='moi.html'
+            
+            
+        }
+    </script>
+    
+</body>
+</html>

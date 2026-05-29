@@ -1,0 +1,165 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background: url("fond.png") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+.contenu {
+    display: flex;
+    background: rgba(255, 255, 255, 0.95); 
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    max-width: 950px;
+    width: 100%;
+    overflow: hidden;
+    padding: 40px;
+    gap: 40px;
+    animation: fadeInUp 0.6s ease;
+}
+
+
+.photo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadre-img {
+    border: 2px solid #d19452;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
+    display: flex;
+}
+
+.cadre-img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(209, 148, 82, 0.4);
+}
+
+.profile-img {
+    display: block;
+    max-height: 400px;
+    width: auto;
+    object-fit: cover;
+}
+
+
+.texte {
+    flex: 1.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: #d19452;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+
+.actions {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+button {
+    padding: 12px 25px;
+    background: #d19452;
+    color: white;
+    border: 2px solid #d19452;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: transparent;
+    color: #d19452;
+    transform: translateY(-2px);
+}
+.pdf{
+    position: absolute;
+    left: 82%;
+    top: 5%;
+    z-index: 1;
+    
+}
+.pdf button{
+    animation: viv 1s infinite alternate;
+
+}
+@keyframes viv {
+    0%{background: #d19452;
+    color: white;}
+    100%{background: transparent;
+    color: #d19452;}
+    
+}
+
+
+@media (max-width: 768px) {
+    .contenu {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        margin-top: 40px;
+    }
+    
+    .profile-img {
+        max-height: 300px;
+    }
+    
+    .actions {
+        flex-direction: column;
+    }
+    
+    button {
+        width: 100%;
+    }
+}

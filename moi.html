@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos | May Brayan</title>
+    <link rel="stylesheet" href="moi.css">
+</head>
+<body>
+    <div class="pdf"> <button onclick="window.location.href='contact.html'">Me Contacter</button></div>
+
+    <main class="contenu">
+        <div class="photo">
+            <div class="cadre-img">
+                <img src="moi.jpeg" alt="Photo de May Brayan" class="profile-img">
+            </div>
+        </div>
+
+        <div class="texte">
+            <h1>À PROPOS DE MAY BRAYAN BRAYAN</h1>
+            <p>
+                Passionné par l’informatique, le développement logiciel et les nouvelles technologies, je suis une personne curieuse, ambitieuse et orientée vers l’innovation. J’aime concevoir des solutions modernes et efficaces, notamment dans les domaines du développement web et des applications intelligentes.
+            </p>
+            <p>
+                Rigoureux et créatif, je cherche constamment à améliorer mes compétences techniques ainsi que ma capacité à résoudre des problèmes complexes. Mon intérêt pour l’architecture des systèmes, l’expérience utilisateur et l’automatisation me pousse à développer des projets à la fois performants et esthétiques.
+            </p>
+            
+            <div class="actions">
+                <button id="skills">Mes Compétences</button>
+                <button id="parcours">Mon Parcours</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        let but = document.getElementById('skills');
+        let par = document.getElementById('parcours');
+        par.onclick = function () {
+            window.location.href='parcours.html'
+            
+        }
+        but.onclick = function () {
+            window.location.href='skills.html';
+            
+        }
+    </script>
+</body>
+</html>
