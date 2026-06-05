@@ -1,0 +1,92 @@
+body {
+    background: url("fond.png") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+h1 {
+    color: #d19452;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+.contenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.95); 
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    max-width: 950px;
+    width: 100%;
+    overflow: hidden;
+    padding: 40px;
+    animation: fadeInUp 0.6s ease;
+}
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin-bottom: 1rem;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+button {
+    padding: 12px 25px;
+    background: #d19452;
+    color: white;
+    border: 2px solid #d19452;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: transparent;
+    color: #d19452;
+    transform: translateY(-2px);
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
